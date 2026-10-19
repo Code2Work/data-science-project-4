@@ -29,9 +29,11 @@ pip install -r requirements.txt
 > Localinizde test ederken kendi bilgilerinizle değiştirin.
 > **Pushlarken bu bilgileri varsayılan haliyle bırakın.**
 
+> **Not:** `init_db.py` her çalıştığında tabloları baştan oluşturur. Veriler bozulursa ya da başka projenin tabloları karışırsa tekrar çalıştırman yeterli.
+
 ## Başlangıç Ayarları
 
-1. **`tests/test_question.py`** — Dosyanın altındaki `run_tests()` fonksiyonunda `user_id` değerini **kendi kullanıcı ID'nizle** değiştirin.
+1. **`tests/test_question.py`** — Dosyanın başındaki `USER_ID = 0` satırına **kendi Kaizu ID'ni** yaz (Profile → Settings → User ID). Yazmazsan skorun gönderilmez.
 2. **`data/question.py`** — `connect_db()` fonksiyonundaki veritabanı şifresini kendi local PostgreSQL şifrenizle değiştirin. **Pushlarken varsayılan haliyle bırakın.**
 
 ## Çalışma Şekli
