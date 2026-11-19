@@ -48,9 +48,9 @@ pip install -r requirements.txt
 python watch.py
 ```
 
-Tek seferlik:
+Tek seferlik (skorun Kaizu'ya gitmesi için bu komutu kullan, `pytest` ile çalıştırırsan skor gönderilmez):
 ```bash
-pytest tests/test_question.py -s -v
+python tests/test_question.py
 ```
 
 ## Tablolar
